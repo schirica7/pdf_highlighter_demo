@@ -16,6 +16,18 @@ body,
 
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+
+@supports (zoom: 1) {
+  body {
+    zoom: 0.8;
+  }
+
+  #root {
+    width: 125%;
+    margin-left: -12.5%;
+  }
 }
 
 button {
