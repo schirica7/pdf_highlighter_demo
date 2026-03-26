@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+.pdfViewer .page {
+  box-shadow: 0 24px 60px -36px rgba(15, 23, 42, 0.32);
+}
+
+.pdfViewer .textLayer {
+  opacity: 0.88;
+}
+
+.pdf-shell [class*="_container_"] {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
